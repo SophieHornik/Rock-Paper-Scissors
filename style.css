@@ -1,0 +1,105 @@
+.bg-hero-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Lilita One', sans-serif;
+}
+
+body {
+  background-image: url("purpblubg.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  color: #000000;
+  background-size: cover;
+}
+
+.m-3 {
+  color: white;
+  font-family: 'Lilita One', sans-serif;
+}
+
+.db {
+  background-image: url(rps.png);
+      background-size: contain;
+      background-position: center, center;
+      background-repeat: no-repeat;
+      border-radius: 20px;
+  height: 200%;
+  
+}
+
+button{
+  color:#817e7e;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border-width: 20px;
+}
+#rock{
+    background-color: #7006b2;
+  border-color: #01069d;
+  color: white;
+}
+#rock:link{
+    background-color: red;
+}
+#rock:visited{
+  background-color: #6c0909;
+}
+  #rock:hover{
+    background-color: #ff7070;
+  }
+#rock:active{
+    background-image: url("red.jpg");
+  background-size: 160px;
+  color: white;
+  }
+
+#paper{
+    background-color: orange;
+  border-color: #ff6600;
+}
+#paper:link{
+    background-color: orange;
+}
+#paper:visited{
+  background-color: #ff7300;
+}
+  #paper:hover{
+    background-color: #ffe1ad;
+  }
+#paper:active{
+   background-image: url("orange.jpg");
+  background-size: 180px;
+  color: white;
+  }
+
+#scissors{
+    background-color: yellow;
+  border-color: #ffc800;
+}
+#scissors:link{
+    background-color: #fefe06;
+}
+#scissors:visited{
+  background-color: #ffea00;
+}
+  #scissors:hover{
+    background-color: #f5fdce;
+  }
+#scissors:active{
+     background-image: url("yellow.jpg");
+  background-size: 160px;
+  color: white;
+  }
+.score{
+  color: white;
+  
+}
+.divy{
+  text-align: center;
+}
+.line{
+  color: white;
+}
