@@ -19,8 +19,8 @@ body {
 }
 
 .db {
-  background-image: url(rps.png);
-      background-size: contain;
+  background-image: url(rpshero.jpg);
+      background-size: cover;
       background-position: center, center;
       background-repeat: no-repeat;
       border-radius: 20px;
@@ -28,18 +28,15 @@ body {
   
 }
 
-button{
-  color:#817e7e;
 
+#rock{
+    background-color: #7006b2;
+  border-color: #01069d;
+   color:#ffffff;
   width: 200px;
   height: 200px;
   border-radius: 100%;
   border-width: 20px;
-}
-#rock{
-    background-color: #7006b2;
-  border-color: #01069d;
-  color: white;
 }
 #rock:link{
     background-color: red;
@@ -59,6 +56,11 @@ button{
 #paper{
     background-color: orange;
   border-color: #ff6600;
+  color:#ffffff;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border-width: 20px;
 }
 #paper:link{
     background-color: orange;
@@ -78,6 +80,11 @@ button{
 #scissors{
     background-color: yellow;
   border-color: #ffc800;
+  color:#ffffff;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border-width: 20px;
 }
 #scissors:link{
     background-color: #fefe06;
@@ -103,7 +110,13 @@ button{
 .line{
   color: white;
 }
-
-.refesh{
+#Computerch{
+  color:#ffffff;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border-width: 20px;
+}
+#refresh{
   text-align: center;
 }
