@@ -1,6 +1,6 @@
 .bg-hero-image {
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: 'Lilita One', sans-serif;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 .m-3 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'Lilita One', sans-serif;
 }
 
@@ -29,76 +29,102 @@ body {
 }
 
 
+
 #rock{
-    background-color: #7006b2;
-  border-color: #01069d;
-   color:#ffffff;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  border-width: 20px;
+  background-image: url("rock.jpg");
+  background-position: center,center;
+ border-color: #ffffff;
+ color: #631d5c;
+ width: 200px;
+ height: 200px;
+ border-radius: 100%;
+ border-width: 20px;
+ margin-top: 10%;
 }
 #rock:link{
-    background-color: red;
+ background-image: url("rock.jpg");
+ background-position: center,center;
 }
 #rock:visited{
-  background-color: #6c0909;
+ background-image: url("rock.jpg");
+ background-position: center,center;
 }
-  #rock:hover{
-    background-color: #ff7070;
-  }
+ #rock:hover{
+   background-image: url("rock.jpg");
+   background-position: center,center;
+   background-size: 190px;
+ }
 #rock:active{
-    background-image: url("red.jpg");
-  background-size: 160px;
-  color: white;
-  }
+ background-image: url("rock.jpg");
+ background-position: center,center;
+ color: #631d5c;
+ background-size: 180px;
+ }
 
-#paper{
-    background-color: orange;
-  border-color: #ff6600;
-  color:#ffffff;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  border-width: 20px;
+
+ #paper{
+  background-image: url("paper.jpg");
+  background-position: center,center;
+ border-color: #ffffff;
+ color: #631d5c;
+ width: 200px;
+ height: 200px;
+ border-radius: 100%;
+ border-width: 20px;
+ margin-top: 10%;
 }
 #paper:link{
-    background-color: orange;
+ background-image: url("paper.jpg");
+ background-position: center,center;
 }
 #paper:visited{
-  background-color: #ff7300;
+ background-image: url("paper.jpg");
+ background-position: center,center;
 }
-  #paper:hover{
-    background-color: #ffe1ad;
-  }
+ #paper:hover{
+   background-image: url("paper.jpg");
+   background-position: center,center;
+   background-size: 190px;
+ }
 #paper:active{
-   background-image: url("orange.jpg");
-  background-size: 180px;
-  color: white;
-  }
+ background-image: url("paper.jpg");
+ background-position: center,center;
+ color: #631d5c;
+ background-size: 180px;
+ }
+
+
+
 
 #scissors{
-    background-color: yellow;
-  border-color: #ffc800;
-  color:#ffffff;
+   background-image: url("scissors.jpg");
+   background-position: center,center;
+  border-color: #ffffff;
+  color: #631d5c;
   width: 200px;
   height: 200px;
   border-radius: 100%;
   border-width: 20px;
+  margin-top: 10%;
 }
 #scissors:link{
-    background-color: #fefe06;
+  background-image: url("scissors.jpg");
+  background-position: center,center;
 }
 #scissors:visited{
-  background-color: #ffea00;
+  background-image: url("scissors.jpg");
+  background-position: center,center;
 }
   #scissors:hover{
-    background-color: #f5fdce;
+    background-image: url("scissors.jpg");
+    background-position: center,center;
+    background-size: 190px;
   }
 #scissors:active{
-     background-image: url("yellow.jpg");
-  background-size: 160px;
-  color: white;
+  background-image: url("scissors.jpg");
+  background-position: center,center;
+  color: #631d5c;
+  background-size: 180px;
   }
 .score{
   color: white;
@@ -109,14 +135,34 @@ body {
 }
 .line{
   color: white;
+  margin-top: 5%;
 }
 #Computerch{
   color:#ffffff;
   width: 200px;
   height: 200px;
-  border-radius: 100%;
   border-width: 20px;
+  margin-top: 10%;
+  color: black;
+  background-image: url("computer.jpg");
+  background-position: center,center;
 }
 #refresh{
   text-align: center;
+}
+
+.showuserchoice{
+  background-color: #7006b2;
+  height: 200px;
+  width: 200px;
+  
+}
+#Userch{
+  color:#ffffff;
+  width: 200px;
+  height: 200px;
+  border-width: 20px;
+  margin-top: 10%;
+  margin-right: 5%;
+  color: black;
 }

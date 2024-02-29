@@ -31,7 +31,7 @@
       <div class="col-12 my-3 my-lg-0 p-3 db text-center">
         <p class="m-3">
           Select Rock, Paper, or Scissors to play against the computer. Rock beats Scissors, Scissors cuts Paper, and
-          Paper covers Rock.
+          Paper covers Rock. Best out of 5 wins!
         </p>
       </div>
       <!-- Description END-->
@@ -40,16 +40,23 @@
      <!-- Buttons START-->
   <div class="row divy">
   <div class="col-12 col-lg-6">
-    <button id="rock" onclick="alert('You have selected rock')">ROCK</button>
-    <button id="paper" onclick="alert('You have selected paper')">Paper</button>
-    <button id="scissors" onclick="alert('You have selected scissors')">scissors</button>
-    <div><h1 class="score">USER SCORE:</h1></div>
+    <div div="showuserchoice"></div>
+    <button id="rock" onclick="alert('You have selected rock')"></button>
+    <button id="paper" onclick="alert('You have selected paper')"></button>
+    <button id="scissors" onclick="alert('You have selected scissors')"></button>
+     <!-- Buttons END-->
+<!--display choices start-->
   </div>
     <div class="buttondiv col-12 col-lg-6">
+      <button id="Userch">User's Choice</button>
        <button id="Computerch">Computer's Choice</button>
-       <div><h1 class="score">COMPUTER SCORE:</h1></div>
   </div>
-     <!-- Buttons END-->
+    <!--display choices end-->
+    <!--score starts-->
+    <hr class="line">
+    <div><h1 class="score">USER SCORE:</h1></div>
+    <div><h1 class="score">COMPUTER SCORE:</h1></div>
+    <!--score ends-->
      <!-- winner START-->
     <hr class="line">
     <div><h1 class="score">WINNER:</h1></div>
