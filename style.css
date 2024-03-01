@@ -13,6 +13,16 @@ body {
   background-size: cover;
 }
 
+.honk {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-size: 5rem;
+}
 .m-3 {
   color: rgb(0, 0, 0);
   font-family: 'Lilita One', sans-serif;
@@ -127,7 +137,14 @@ body {
   background-size: 180px;
   }
 .score{
-  color: white;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-size: 4rem;
   
 }
 .divy{
@@ -138,38 +155,57 @@ body {
   margin-top: 5%;
 }
 #Computerch{
-  color:#ffffff;
+  color: #ffffff;
   width: 200px;
   height: 200px;
   margin-top: 10%;
-  color: black;
   background-image: url("computer.png");
   background-position: center,center;
   background-color: transparent;
   border: none;
+  
 }
 #refresh{
   text-align: center;
 }
 
-
+#restartbtn{
+  background-color: pink;
+  color: #000000;
+  border-radius: 5px;
+  font-family: 'Lilita One', sans-serif;
+}
+#restartbtn:hover{
+  background-color: aqua;
+  font-family: 'Lilita One', sans-serif;
+}
   
 
 #Userch{
-  color:#ffffff;
+ color: #ffffff;
   width: 200px;
   height: 200px;
   border-width: 20px;
   margin-top: 10%;
   margin-right: 5%;
-  color: black;
   color:#ffffff;
   width: 200px;
   height: 200px;
   margin-top: 10%;
-  color: black;
   background-image: url("usericonn\ \(1\).png");
   background-position: center,center;
   background-color: transparent;
   border: none;
+  
+}
+.usertext{
+  margin-top: 50px;
+  font-size: 20px
+  
+  
+}
+
+.comptext{
+  margin-top: 0px;
+  font-size: 20px
 }
