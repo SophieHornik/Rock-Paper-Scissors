@@ -13,3 +13,7 @@ if (randomNumber === 0){
 }  else if (randomNumber === 2 ){
         compChoice = "scissors"}
 }
+
+function showRock() {
+    Userch.src = "rock.jpg"
+}
