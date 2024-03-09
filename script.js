@@ -1,6 +1,7 @@
 let username = prompt('Please enter your username.')
-document.getElementById('Userch').innerHTML = `<h1 class="usertext">${username}'s <br> Choice</h1>`
+document.getElementById('Userch').innerHTML = `<h1 class="usertext">${username}'s <br> Choice</h1> <img id="userpic" src="usericonn (1).png" alt="..." />`
 document.getElementById('userScoreDisplay').textContent = `${username}'s Score:`
+let userPic = document.getElementById('userPic');
 
 function playGame(userChoice){
 //Get computer choice
@@ -14,6 +15,4 @@ if (randomNumber === 0){
         compChoice = "scissors"}
 }
 
-function showRock() {
-    Userch.src = "rock.jpg"
-}
+//display
