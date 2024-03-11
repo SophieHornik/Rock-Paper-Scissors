@@ -14,5 +14,7 @@ if (randomNumber === 0){
         compChoice = "scissors"}
 
 //display user choice
+ // Display user choice
+ document.getElementById('userpic').src = `${userChoice}.jpg`;
 }
 
