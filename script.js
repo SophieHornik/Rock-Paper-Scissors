@@ -4,7 +4,7 @@ document.getElementById('userScoreDisplay').textContent = `${username}'s Score:`
 
 function playGame(userChoice){
 //Get computer choice
-let randomNumber = math.Floor(Math.random() * 3);
+let randomNumber = Math.floor(Math.random() * 3);
 let compChoice
 if (randomNumber === 0){
     compChoice="rock"
@@ -12,7 +12,7 @@ if (randomNumber === 0){
     compChoice = "paper"
 }  else if (randomNumber === 2 ){
         compChoice = "scissors"}
-/* 
+
 document.getElementById('userpic').src = `${userChoice}.jpg`;
 document.getElementById('comppic').src = `${compChoice}.jpg`;
 
@@ -29,7 +29,7 @@ function whoWon(userChoice,compChoice ){
 function Userwins(){
     document.getElementById('score').textContent  = "WINNER:You won that round!";
     let UserScore= UserScore++
-    document.getElementById('userScoreDisplay').textContent  = ""`${username}'s Score:'" + "UserScore"`; 
+    document.getElementById('userScoreDisplay').textContent  = `${username}'s Score:'" + "UserScore"`; 
     if(UserScore>=3){ userWinGame()}
 
 }
@@ -39,7 +39,7 @@ function userWinGame(){
 function Compwins(){
     document.getElementById('score').textContent  = "WINNER:You lost that round!";
     let CompScore= CompScore++
-    document.getElementById('compScoreDisplay').textContent  = ""COMPUTER's Score:" + "CompScore"`; 
+    document.getElementById('compScoreDisplay').textContent  = "COMPUTER's Score:" + CompScore; 
     if(UserScore>=3){ compWinGame()}
 
 }
