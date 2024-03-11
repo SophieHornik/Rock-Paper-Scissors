@@ -12,7 +12,7 @@ if (randomNumber === 0){
     compChoice = "paper"
 }  else if (randomNumber === 2 ){
         compChoice = "scissors"}
-
+/* 
 document.getElementById('userpic').src = `${userChoice}.jpg`;
 document.getElementById('comppic').src = `${compChoice}.jpg`;
 
