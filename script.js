@@ -13,9 +13,39 @@ if (randomNumber === 0){
 }  else if (randomNumber === 2 ){
         compChoice = "scissors"}
 
-document.getElementById('userpic').src =`${userChoice}.jpg`;
-document.getElementById('comppic').src =`${compChoice}.jpg`;
-       
+document.getElementById('userpic').src = `${userChoice}.jpg`;
+document.getElementById('comppic').src = `${compChoice}.jpg`;
 
 }
+function whoWon(userChoice,compChoice ){
+    if (userChoice === compChoice){
+        tie()
+    } else if (UserChoice === 'rock' && compChoice === 'paper' || UserChoice === 'scissors' && compChoice === 'rock' || UserChoice === 'paper' && compChoice === 'scissors'){
+        Compwins()
+}else if (UserChoice === 'paper' && compChoice === 'rock' || UserChoice === 'rock' && compChoice === 'scissors' || UserChoice === 'scissors' && compChoice === 'paper'){
+    Userwins()
+}
+}
+function Userwins(){
+    document.getElementById('score').textContent  = "WINNER:You won that round!";
+    let UserScore= UserScore++
+    document.getElementById('userScoreDisplay').textContent  = ""`${username}'s Score:'" + "UserScore"`; 
+    if(UserScore>=3){ userWinGame()}
 
+}
+function userWinGame(){
+    document.getElementById('score').textContent  = "WINNER:You won the game! Congrats!";
+}
+function Compwins(){
+    document.getElementById('score').textContent  = "WINNER:You lost that round!";
+    let CompScore= CompScore++
+    document.getElementById('compScoreDisplay').textContent  = ""COMPUTER's Score:" + "CompScore"`; 
+    if(UserScore>=3){ compWinGame()}
+
+}
+function compWinGame(){
+    document.getElementById('score').textContent  = "WINNER:You lost the game. Try again!";
+}
+function tie(){
+    document.getElementById('score').textContent  = "WINNER:It's a tie!";
+}
