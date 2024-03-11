@@ -13,8 +13,9 @@ if (randomNumber === 0){
 }  else if (randomNumber === 2 ){
         compChoice = "scissors"}
 
-//display user choice
- // Display user choice
- document.getElementById('userpic').src = `${userChoice}.jpg`;
+document.getElementById('userpic').src =`${userChoice}.jpg`;
+document.getElementById('comppic').src =`${compChoice}.jpg`;
+       
+
 }
 
