@@ -10,7 +10,8 @@
   <!-- fonts -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Preahvihear&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Preahvihear&family=Rubik+Doodle+Shadow&display=swap"
+    rel="stylesheet">
 </head>
 <!--Every single image on this site is from google and is not my own.-->
 
@@ -18,56 +19,66 @@
 
   <div class="container">
     <!-- Header Section-->
-   
-      <!-- Hero-->
-      <div class="col-12 p-5 text-center">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3 honk" id="color">Rock Paper Scissors</h1>
-          </div>
+
+    <!-- Hero-->
+    <div class="col-12 p-5 text-center">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3 honk" id="color">Rock Paper Scissors</h1>
         </div>
       </div>
-      <!-- Hero End-->
-      <!-- Description-->
-      <div class="col-12 my-3 my-lg-0 p-3 db text-center">
-        <p class="m-3">
-          Select Rock, Paper, or Scissors to play against the computer. Rock beats Scissors, Scissors cuts Paper, and
-          Paper covers Rock. Best out of 5 wins!
-        </p>
-      </div>
-      <!-- Description END-->
     </div>
-    <!-- Header Section END-->
-     <!-- Buttons START-->
-  <div class="row divy">
-  <div class="col-12 col-lg-6">
-    <div div="showuserchoice"></div>
-    <button id="rock" onclick="playGame('rock')"></button>
-    <button id="paper" onclick="playGame('paper')"></button>
-    <button id="scissors" onclick="playGame('scissors')"></button>
-     <!-- Buttons END-->
-<!--display choices start-->
+    <!-- Hero End-->
+    <!-- Description-->
+    <div class="col-12 my-3 my-lg-0 p-3 db text-center">
+      <p class="m-3">
+        Select Rock, Paper, or Scissors to play against the computer. Rock beats Scissors, Scissors cuts Paper, and
+        Paper covers Rock. Best out of 5 wins!
+      </p>
+    </div>
+    <!-- Description END-->
   </div>
-    <div class="buttondiv col-12 col-lg-6">
-      <button id="Userch"><h1 class="usertext">User's <br> Choice</h1> <img id="userpic" src="usericonn (1).png" alt="..." /></button>
-       <button id="Computerch"> <h1 class="comptext">Computer's <br>Choice </h1> <img id="comppic" src="computer.png" alt="..." /> </button>
-  </div>
+  <!-- Header Section END-->
+  <!-- Buttons START-->
+  <div  class="row divy">
+    <div id="hideAtEndOfGame1" class="col-12 col-lg-6">
+      <div id="showuserchoice"></div>
+      <button id="rock" onclick="playGame('rock')"></button>
+      <button id="paper" onclick="playGame('paper')"></button>
+      <button id="scissors" onclick="playGame('scissors')"></button>
+      <!-- Buttons END-->
+      <!--display choices start-->
+    </div>
+    <div id="hideAtEndOfGame2" class="buttondiv col-12 col-lg-6">
+      <button id="Userch">
+        <h1 class="usertext">User's <br> Choice</h1> <img id="userpic" src="usericonn (1).png" alt="..." />
+      </button>
+      <button id="Computerch">
+        <h1 class="comptext">Computer's <br>Choice </h1> <img id="comppic" src="computer.png" alt="..." />
+      </button>
+    </div>
     <!--display choices end-->
     <!--score starts-->
     <hr class="line">
-    <div><h1 id="userScoreDisplay"class="score">USER SCORE:</div>
-    <div><h1 id="compScoreDisplay"class="score">COMPUTER SCORE:</div>
-    <!--score ends-->
-     <!-- winner START-->
-    <hr class="line">
-    <div class="sc"><h1 class="score">WINNER:</div>
+    <div>
+      <h1 id="userScoreDisplay" class="score">USER SCORE: 0
     </div>
-     <!-- winner END-->
-        <!-- Refresh START-->
-        <div class="col-12" id="refresh">
-        <button id="restartbtn"  onclick="window. location. reload()">Restart</button>
-        </div>
-           <!-- Refresh END-->
+    <div>
+      <h1 id="compScoreDisplay" class="score">COMPUTER SCORE: 0
+    </div>
+    <!--score ends-->
+    <!-- winner START-->
+    <hr class="line">
+    <div class="sc">
+      <h1 id="winnerDisplayMsg" class="score">Round Result
+    </div>
+  </div>
+  <!-- winner END-->
+  <!-- Refresh START-->
+  <div class="col-12" id="refresh">
+    <button id="restartbtn" onclick="window. location. reload()">Restart</button>
+  </div>
+  <!-- Refresh END-->
   <!-- footer START -->
   <footer class="text-center text-white">
     <!-- Grid container -->
